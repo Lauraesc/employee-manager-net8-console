@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EmployeeManager.Domain.Horarios
 {
-    internal class MesAnio
+    public readonly record struct MesAnio(int Anio, int Mes)
     {
+        public override string ToString() => $"{Anio:D4}-{Mes:D2}";
     }
 }

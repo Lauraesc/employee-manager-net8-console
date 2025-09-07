@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EmployeeManager.Domain.Repositorios
 {
-    internal interface IUnidadTrabajo
+    public interface IUnidadTrabajo
     {
+        Task GuardarCambiosAsync();
     }
 }
