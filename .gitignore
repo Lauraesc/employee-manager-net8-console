@@ -1,0 +1,9 @@
+﻿# VS / .NET
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.ide
+*.swp
+TestResult*/
