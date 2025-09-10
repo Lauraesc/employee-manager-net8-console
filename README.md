@@ -69,48 +69,33 @@ cd employee-manager-net8-console
 3. **Run the application:**
 dotnet run
 4. **Menu Options:**
-5. Add new employees (Planta or Temporal)
-
+Add new employees (Planta or Temporal)
 List employees
-
 Update employee details
-
 Delete employees
-
 Add schedules
-
 Register performance evaluations
-
 Generate payroll report
-
 Generate performance report
 
-4. Design Decisions
+Design Decisions
 
 OOP Principles:
-
 Inheritance: EmpleadoPlanta and EmpleadoTemporal inherit from EmpleadoBase.
-
 Polymorphism: CalcularSalario() overridden per employee type.
-
 Encapsulation: Schedule conflict logic in EmpleadoBase.AgregarHorario() and Horario.SeSuperponeCon().
-
 Abstraction: Services handle business logic separate from data storage.
-
 Repository Pattern (DIP):
-
 The application depends on IEmpleadoRepository interface rather than concrete classes.
-
 Two implementations: InMemory and Json storage.
 
 Separation of Concerns:
 
 CRUD operations (EmpleadosCrud.cs) are separate from the console UI (Program.cs).
-
 Business logic in services (NominaService, DesempenoService).
-
 Domain entities encapsulate data and behavior.
 
 Authors: Ziuvar Ruiz Alvarez, Laura Escobar Rojo
 Technology: .NET 8, C#
 Project Type: Console App, OOP, DIP, Repository Pattern
+
